@@ -12,6 +12,7 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'Yesterday is history, tomorrow is a mystery, today is a gift...that is why it is called present.',' Master Oogway-Kungfu Panda'),
     new Quote(3,'The mark of a true hero is humility.','Master Shifu')
   ];
+ 
   constructor() { }
 
   ngOnInit(): void {
