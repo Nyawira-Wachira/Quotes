@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteDetailComponent
+    QuoteDetailComponent,
+    DatePipe
   ],
   imports: [
     BrowserModule,
