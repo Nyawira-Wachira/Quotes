@@ -6,10 +6,11 @@
     <div *ngFor='let quote of quotes ;let i = index'>
       <div>
       {{quote.text}}
-      <p><strong>Created on {{quote.creationDate|date}}</strong></p>
+      <p><strong>{{quote.author}}</strong></p>
+      <p>{{quote.creationDate|date}}</p>
       <button (click)='toggleDetails(i)'>Details</button>
       </div>
-      <div *ngIf='quote.showDescription'>
+      <br><div *ngIf='quote.showDescription'>
       <app-quote-detail [quote]='quote' (isDislike) = 'deleteQuote($event,i)'></app-quote-detail>
       </div>
     </div>
