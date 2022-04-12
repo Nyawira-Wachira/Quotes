@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'A winner is a dreamer who never gives up.', '~Nelson Mandela~',new Date(2022, 3,9) , 'Linda June'),
-    new Quote(2,'Yesterday is history, tomorrow is a mystery, today is a gift...that is why it is called present.',' ~Master Oogway~', new Date(2022, 3, 10), 'Liam Jerry'),
-    new Quote(3,'The mark of a true hero is humility.','~Master Shifu~', new Date(2022, 3, 15), 'Kylie Peters')
+    new Quote(1, 'A winner is a dreamer who never gives up.', '~Nelson Mandela~', 'Linda June', new Date(2022, 3,9) ),
+    new Quote(2,'Yesterday is history, tomorrow is a mystery, today is a gift...that is why it is called present.', ' ~Master Oogway~', 'Liam Jerry', new Date(2022, 3, 10) ),
+    new Quote(3,'The mark of a true hero is humility.','~Master Shifu~', 'Kylie James', new Date(2022, 3, 15))
   ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;

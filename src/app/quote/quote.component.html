@@ -1,22 +1,25 @@
 <div class="container">
-  <h1>Quotes</h1>
   <hr>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-5">
+      <app-quote-form></app-quote-form>
+    </div>
+    <div class="col-md-7">
+      <h2>Quotes</h2>
     <div *ngFor='let quote of quotes ;let i = index'>
       <div>
       {{quote.text}}
       <p><strong>{{quote.author}}</strong></p>
       <p>{{quote.creationDate|date}}</p>
-      <button (click)='toggleDetails(i)'>Details</button>
-      </div>
+      <button id ="details" (click)='toggleDetails(i)'>Details</button>
+      <br><br><button type="button" id= "up" class="btn btn-primary btn-sm">Upvote</button>
+      <button type="button" id="down" class="btn btn-success btn-sm">Downvote</button>
+    </div>
+
       <br><div *ngIf='quote.showDescription'>
       <app-quote-detail [quote]='quote' (isDislike) = 'deleteQuote($event,i)'></app-quote-detail>
       </div>
     </div>
-    </div>
-    <div class="col-md-6">
-      <app-quote-form></app-quote-form>
     </div>
   </div>
 </div>
