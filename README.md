@@ -16,6 +16,16 @@ quote component and details of the quote displayed in a quote details component.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. 
   The application will automatically reload if you change any of the source files.
   
+## Preview
+
+
+
+
+![Screenshot from 2022-04-13 00-04-01](https://user-images.githubusercontent.com/100156865/163058703-c9935fc2-544a-4e2f-bcb9-2d505ec8417f.png)
+
+
+
+  
 ## Technologies Used
 * Angular
 * TypeScript
