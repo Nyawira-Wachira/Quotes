@@ -1,5 +1,9 @@
-<p> Submitted by : {{quote.name}}</p>
-<p>Upvotes : {{quote.likes}}</p>
-<p>Downvotes : {{quote.dislikes}}</p>
-<!-- app-like></app-like> -->
-<button (click)= 'quoteDislike(true)' class="btn btn-danger btn-sm">Delete</button>
+<div class="card border-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body text-dark">
+        <p> Submitted by : {{quote.name}}</p>
+        <p>Upvotes : {{quote.likes}}</p>
+        <p>Downvotes : {{quote.dislikes}}</p>
+        <button (click)= 'quoteDislike(true)' class="btn btn-danger btn-sm">Delete</button>          
+    </div>
+  </div>
+        

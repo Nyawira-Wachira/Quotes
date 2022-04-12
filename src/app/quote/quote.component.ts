@@ -10,8 +10,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1, 'A winner is a dreamer who never gives up.', '~Nelson Mandela', 'Jack Kings', new Date(2022, 3,9), 0,0),
-    new Quote(3,'The mark of a true hero is humility.','~Master Shifu', 'Linda James', new Date(2022, 3, 15),0,0)
+    new Quote(1, 'Yesterday is history, tomorrow is a mystery, today is a gift...  that is why it is called present.', '~Master Oogway', 'Jack Kings', new Date(2022, 3,9), 0,0)
   ];
   addNewQuote(quote){
     let quoteLength = this.quotes.length;

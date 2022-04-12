@@ -9,5 +9,8 @@
     margin-left:10px ;
 }
 p {
-    margin-left: 60px;
+    margin-left: 120px;
+}
+h2,h1 {
+    text-align: center;
 }
