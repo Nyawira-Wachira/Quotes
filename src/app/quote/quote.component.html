@@ -2,7 +2,7 @@
   <hr>
   <div class="row">
     <div class="col-md-5">
-      <app-quote-form></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
     <div class="col-md-7">
       <h2>Quotes</h2>
@@ -12,9 +12,9 @@
       <p><strong>{{quote.author}}</strong></p>
       <p>{{quote.creationDate|date}}</p>
       <button id ="details" (click)='toggleDetails(i)'>Details</button>
-      <br><br><button type="button" id= "up" class="btn btn-primary btn-sm">Upvote</button>
+      <button type="button" id= "up" class="btn btn-primary btn-sm">Upvote</button>
       <button type="button" id="down" class="btn btn-success btn-sm">Downvote</button>
-    </div>
+      </div>
 
       <br><div *ngIf='quote.showDescription'>
       <app-quote-detail [quote]='quote' (isDislike) = 'deleteQuote($event,i)'></app-quote-detail>
