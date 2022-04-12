@@ -1,4 +1,13 @@
+#details {
+    margin-left: 55px;
+}
 #up {
-margin-right: 30px;
-margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
+    }
+#down {
+    margin-left:10px ;
+}
+p {
+    margin-left: 60px;
 }

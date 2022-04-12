@@ -1,2 +1,5 @@
-<p> By {{quote.name}}</p>
-<button (click)= 'quoteDislike(true)' class="btn btn-danger">Delete</button>
+<p> Submitted by : {{quote.name}}</p>
+<p>Upvotes : {{quote.likes}}</p>
+<p>Downvotes : {{quote.dislikes}}</p>
+<!-- app-like></app-like> -->
+<button (click)= 'quoteDislike(true)' class="btn btn-danger btn-sm">Delete</button>
