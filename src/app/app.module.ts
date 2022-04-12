@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TimeCountPipe } from './time-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { LikeComponent } from './like/like.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LikeComponent } from './like/like.component';
     QuoteDetailComponent,
     TimeCountPipe,
     QuoteFormComponent,
-    LikeComponent
+    LikeComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
