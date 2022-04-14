@@ -6,7 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 It is an angular App made up of different components through which quotes are created using a form component, displayed through the
-quote component and details of the quote displayed in a quote details component.
+quote component and details of the quote displayed in a quote details component. The app gives you a chance to create a quote through the form,
+to like or dislike a quote displayed on the quote display section and to view details of the quote on clicking the details button.
 
 ## Setup/Installation Requirements
 * Fork this repository to your github account.
