@@ -18,10 +18,11 @@ quote component and details of the quote displayed in a quote details component.
   
 ## Preview
 
+![Screenshot from 2022-04-14 11-45-53](https://user-images.githubusercontent.com/100156865/163349526-d02b4907-6b94-4cb4-be0f-672ca214fed0.png)
 
 
 
-![Screenshot from 2022-04-13 00-04-01](https://user-images.githubusercontent.com/100156865/163058703-c9935fc2-544a-4e2f-bcb9-2d505ec8417f.png)
+
 
 
 
