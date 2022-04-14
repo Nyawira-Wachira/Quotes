@@ -11,6 +11,10 @@
 p {
     margin-left: 120px;
 }
-h2,h1 {
+h1 {
     text-align: center;
+    color: black;
+}
+h2 {
+    text-align: center;  
 }

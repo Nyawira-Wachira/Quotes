@@ -6,10 +6,12 @@
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
     <div class="col-md-6">
-      <h2>Quotes Display</h2><br>
-    <div *ngFor='let quote of quotes ;let i = index'>
+      <h2>Quote Display</h2><br>
+     <div *ngFor='let quote of quotes ;let i = index'>
       <div>
-    
+        <div class="card bg-dark text-black">
+          <img src="./assets/images/qt.jpeg"      class="card-img" alt="....">
+          <div class="card-img-overlay">   
       {{quote.text}}
       <p><strong>{{quote.author}}</strong></p>
       {{quote.creationDate|date:'s'}} seconds
@@ -17,7 +19,9 @@
       {{quote.likes}}<button type="button" id= "up" class="btn btn-success btn-sm"(click)="likeButtonClick(i)">Like</button> 
       {{quote.dislikes}}<button type="button" id="down" class="btn btn-primary btn-sm"(click)="dislikeButtonClick(i)">Dislike</button> 
       </div>
-      </div>
+     </div>
+    </div>
+  </div>
       <div>
       <br><button class="btn btn-info btn-sm"  id ="details"(click)='toggleDetails(i)'>Details</button>
       </div>
